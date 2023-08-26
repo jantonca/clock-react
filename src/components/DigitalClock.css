@@ -1,0 +1,19 @@
+/* Import custom font */
+@font-face {
+    font-family: 'digital-7';
+    font-style: normal;
+    src: local('digital-7'), url(./../../digital-7.woff2) format('truetype');
+}
+
+/* Digital clock container styles */
+.clock-container-digital {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'digital-7', sans-serif;
+    font-size: 4rem;
+    background: #000000;
+    color: #ffffff;
+    letter-spacing: 3px;
+    min-width: 300px;
+    padding: 0.6rem 0 0.4rem;
+  }

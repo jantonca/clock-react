@@ -1,0 +1,70 @@
+/* Clock container styles */
+.clock-container-analogue {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black 70%, lightgray 30%);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -8px 19px 11px 5px rgba(138, 138, 138, 0.6);
+    position: relative;
+  }
+  
+  /* Clock hands base styles */
+  .hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+  }
+  
+  /* Clock hands size */
+  .hour-hand, .hour-rotation {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .minute-hand, .minute-rotation {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .second-hand, .second-rotation {
+    width: 230px;
+    height: 300px;
+  }
+  
+  /* Clock hands rotation styles */
+  .hour-rotation, .minute-rotation, .second-rotation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  /* Styles for the hand extensions */
+  .hour-rotation::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background: #fefefe;
+    z-index: 9;
+  }
+  
+  .minute-rotation::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 140px;
+    background: #fefefe;
+    z-index: 10;
+  }
+  
+  .second-rotation::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ffffff;
+    z-index: 11;
+  }

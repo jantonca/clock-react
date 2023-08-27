@@ -37,7 +37,7 @@ const AnalogueClock = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const clockStyle = {
+  const secondHandStyle = {
     transform: `rotate(${clockRotation.second}deg)`,
   };
 
@@ -58,7 +58,7 @@ const AnalogueClock = () => {
         <div className="minute-rotation" style={minuteHandStyle}></div>
       </div>
       <div className="second-hand">
-        <div className="second-rotation" style={clockStyle}></div>
+        <div className="second-rotation" style={secondHandStyle}></div>
       </div>
     </div>
   );
